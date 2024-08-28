@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  margin-right: 14px;
+  font-weight: 700;
+}
+
+.btn {
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+  line-height: 1.3;
+  background-color: transparent;
+  border: none;
+  color: #1082b3;
+}
