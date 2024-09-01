@@ -36,7 +36,7 @@ export default function App() {
             }
           />
           <Route
-            path="/singin"
+            path="/login"
             element={
               <RestrictedRoute
                 component={<LoginPage />}
@@ -47,7 +47,7 @@ export default function App() {
           <Route
             path="/contacts"
             element={
-              <PrivateRoute component={<ContactPage />} redirectTo="/singin" />
+              <PrivateRoute component={<ContactPage />} redirectTo="/login" />
             }
           />
         </Routes>
