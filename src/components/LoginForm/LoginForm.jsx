@@ -119,6 +119,7 @@ export default function LoginForm() {
           </Form>
         )}
       </Formik>
+      <div className={style.bottle}></div>
     </div>
   );
 }

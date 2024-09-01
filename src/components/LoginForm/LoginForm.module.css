@@ -129,7 +129,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  background: var(--primary-blue-color, rgba(64, 123, 255, 0.34));
+  background: #407bff;
   box-shadow: 0px 4px 8px 0px rgba(64, 123, 255, 0.34);
   color: var(--primary-white-color, rgb(255, 255, 255));
   text-align: center;
@@ -195,4 +195,66 @@
 .link:hover,
 .link:focus {
   color: var(--orange-accent-color, rgb(255, 157, 67));
+}
+
+.bottle {
+  background-image: url("../../../public/images/BottleSignIn-mob@1x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 210px;
+  background-position: center;
+  margin-top: 65px;
+  left: 50%;
+  /* transform: translate(-50%); */
+  top: 450px;
+  z-index: -1;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bottle {
+    background-image: url("../../../public/images/BottleSignIn-mob@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bottle {
+    background-image: url("../../../public/images/BottleSignin-t@1x.png");
+    width: 736px;
+    height: 548px;
+    /* left: 112px;
+    transform: translate(0);
+    top: 116px; */
+    margin-top: 0;
+    background-position: 80px;
+    z-index: -1;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bottle {
+    background-image: url("../../../public/images/BottleSignin-t@2x.png");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bottle {
+    background-image: url("../../../public/images/BottleSignin-d-@1x.png");
+    width: 916px;
+    height: 680px;
+    left: -51px;
+    top: 80px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bottle {
+    background-image: url("../../../public/images/BottleSignin-d@2x.png");
+  }
 }
