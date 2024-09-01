@@ -36,11 +36,11 @@ export const register = createAsyncThunk(
  * After successful login, add the token to the HTTP header
  */
 
-export const login = createAsyncThunk(
-  "auth/login",
+export const signin = createAsyncThunk(
+  "auth/signin",
   async (userInfo, thunkAPI) => {
     try {
-      const res = await axios.post("/users/login", userInfo);
+      const res = await axios.post("/users/signin", userInfo);
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
