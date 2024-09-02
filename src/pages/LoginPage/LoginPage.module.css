@@ -1,0 +1,22 @@
+.background {
+  background-position: center 28px;
+  background-image: url(../../../public/images/BackgroundSignIn-mob@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url(../../../public/images/BackgroundSignIn-t@1x.png);
+    background-position: center 0px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url(../../../public/images/BackgroundSignIn-d@1x.png);
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
