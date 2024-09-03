@@ -5,11 +5,25 @@
   background-size: cover;
   z-index: -2;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../../../public/images/BackgroundSignIn-mob@2x.png");
+  }
+}
 
 @media screen and (min-width: 768px) {
   .background {
     background-image: url(../../../public/images/BackgroundSignIn-t@1x.png);
     background-position: center 0px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background {
+      background-image: url("../../../public/images/BackgroundSignIn-t@2x.png");
+    }
   }
 }
 @media screen and (min-width: 1440px) {
@@ -18,5 +32,13 @@
     background-size: 100%;
     background-size: contain;
     background-repeat: repeat;
+    align-items: flex-end;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background {
+      background-image: url("../../../public/images/BackgroundSignIn-d@2x.png");
+    }
   }
 }
