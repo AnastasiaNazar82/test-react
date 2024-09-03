@@ -38,10 +38,10 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
-    /* margin-bottom: 16px;
-    margin-left: 0; */
-    top: 0;
-    left: 0;
+    margin-bottom: 16px;
+    margin-left: 0;
+    /* top: 0;
+    left: 0; */
     margin-right: auto;
     width: 336px;
     /* z-index: 100; */
@@ -226,7 +226,7 @@
     width: 736px;
     height: 548px;
     background-position: 80px;
-    transform: translateY(-440px);
+    /* transform: translateY(-440px); */
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -246,6 +246,7 @@
     margin-top: 0;
     background-position: -65px center;
     /* background-size: 880px, cover; */
+    transform: translateY(-440px);
   }
 
   @media (min-device-pixel-ratio: 2),
